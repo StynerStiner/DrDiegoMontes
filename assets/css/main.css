@@ -4204,6 +4204,11 @@ span {
   justify-content: space-between;
   padding: 10px 0;
 }
+.header-main .header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 .header-main .main-menu ul {
   margin-bottom: 0;
 }
@@ -4211,7 +4216,7 @@ span {
   position: relative;
   list-style: none;
   display: inline-block;
-  margin-inline-end: 50px;
+  margin-inline-end: 30px;
 }
 .header-main .main-menu ul li:last-child {
   margin-inline-end: 0;
