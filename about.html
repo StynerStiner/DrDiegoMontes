@@ -35,6 +35,59 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
+        /* About page hero section - responsive styling */
+        .hero-secton.hero-3 {
+            border-radius: 20px !important;
+            margin: 80px 80px 80px 80px !important;
+            overflow: hidden !important;
+            min-height: 1200px !important;
+        }
+
+        /* Tablet */
+        @media (max-width: 992px) {
+            .hero-secton.hero-3 {
+                min-height: 900px !important;
+                margin: 40px 40px 60px 40px !important;
+                border-radius: 18px !important;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero-secton.hero-3 {
+                min-height: 700px !important;
+                margin: 15px 15px 50px 15px !important;
+                border-radius: 15px !important;
+            }
+            
+            .hero-image-items {
+                gap: 15px !important;
+            }
+            
+            .hero-image {
+                width: 300px !important;
+                height: 400px !important;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .hero-secton.hero-3 {
+                min-height: 550px !important;
+                margin: 10px 10px 40px 10px !important;
+                border-radius: 12px !important;
+            }
+            
+            .hero-image-items {
+                gap: 10px !important;
+            }
+            
+            .hero-image {
+                width: 250px !important;
+                height: 350px !important;
+            }
+        }
+
         .work-process-items {
             height: 100%;
             display: flex;
@@ -85,7 +138,7 @@
             object-position: center;
             z-index: 1;
         }
- about-page
+
         /* Ensure video button stays on top */
         .video-wrapper .video-button {
             position: relative;
@@ -323,7 +376,7 @@
     </div>
 
     <!-- Hero Section Start -->
-    <section class="hero-secton hero-3 bg-cover" style="background-image: url('https://pub-af6f4cefa51449e1bc1879efb21cc1a0.r2.dev/familysmiling.jpg'); background-position: center center; background-size: cover; position: relative; border-radius: 20px; margin: 80px 80px 80px 80px; overflow: hidden; min-height: 1200px;">
+    <section class="hero-secton hero-3 bg-cover" style="background-image: url('https://pub-af6f4cefa51449e1bc1879efb21cc1a0.r2.dev/familysmiling.jpg'); background-position: center center; background-size: cover; position: relative;">
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 1;"></div>
         <div class="container" style="position: relative; z-index: 2;">
             <div class="row justify-content-center">
