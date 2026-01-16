@@ -1,0 +1,7 @@
+<svg width="360" height="44" viewBox="0 0 360 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&amp;display=swap');
+</style>
+<text x="45" y="31" font-family="'Satoshi Variable', sans-serif" font-size="26" font-weight="400" fill="white" letter-spacing="0.3">Dr Diego <tspan font-family="'Marcellus', serif" font-weight="400" fill="#EFFB53">Montes</tspan>, D.C.</text>
+<path d="M14.2224 0H17.7781V16.125H14.2224V0ZM7.11093 3.58351H10.6667V17.917H7.11093V3.58351ZM0 8.95851H3.55573V19.7085H0V8.95851ZM21.3333 3.58351H24.8891V17.917H21.3333V3.58351ZM28.4443 8.95851H32V19.7085H28.4443V8.95851ZM14.2224 26.875H17.7781V43H14.2224V26.875ZM21.3333 25.0835H24.8891V39.4165H21.3333V25.0835ZM28.4443 23.2915H32V34.0415H28.4443V23.2915ZM7.11093 25.0835H10.6667V39.4165H7.11093V25.0835ZM0 23.2915H3.55573V34.0415H0V23.2915Z" fill="#EFFB53"/>
+</svg>
