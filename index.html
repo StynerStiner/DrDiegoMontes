@@ -436,19 +436,25 @@
 
         /* Ensure hamburger menu is visible on mobile */
         @media (max-width: 1199px) {
+            * {
+                max-width: 100vw !important;
+            }
+            
             body {
                 overflow-x: hidden !important;
+                max-width: 100vw !important;
             }
             
             .header-1 {
                 position: relative !important;
                 width: 100% !important;
                 max-width: 100vw !important;
+                overflow: hidden !important;
             }
             
             .header-1 .container-fluid {
-                padding-right: 15px !important;
-                padding-left: 15px !important;
+                padding-right: 10px !important;
+                padding-left: 10px !important;
                 max-width: 100% !important;
             }
             
@@ -457,11 +463,16 @@
                 justify-content: space-between !important;
                 align-items: center !important;
                 width: 100% !important;
-                max-width: 100% !important;
             }
             
             .header-left {
                 flex-shrink: 0 !important;
+                max-width: 60% !important;
+            }
+            
+            .header-left .logo img {
+                max-width: 180px !important;
+                height: auto !important;
             }
             
             .header-right {
@@ -469,6 +480,7 @@
                 align-items: center !important;
                 gap: 0 !important;
                 margin-right: 0 !important;
+                padding-right: 0 !important;
                 flex-shrink: 0 !important;
             }
             
@@ -481,10 +493,8 @@
                 display: flex !important;
                 z-index: 9999 !important;
                 background-color: transparent !important;
-                padding: 8px !important;
-                border-radius: 6px !important;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
+                padding: 5px !important;
+                margin: 0 !important;
                 flex-shrink: 0 !important;
             }
             
@@ -493,13 +503,13 @@
                 display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
-                width: 28px !important;
-                height: 28px !important;
+                width: 30px !important;
+                height: 30px !important;
             }
             
             .header__hamburger .sidebar__toggle i {
                 color: #EFFB53 !important;
-                font-size: 28px !important;
+                font-size: 30px !important;
                 font-weight: 900 !important;
             }
             
@@ -518,6 +528,12 @@
 
         /* Hero content positioning - mobile only */
         @media (max-width: 768px) {
+            .hero-secton.hero-4 {
+                margin-left: 15px !important;
+                margin-right: 15px !important;
+                overflow: hidden !important;
+            }
+            
             .hero-4 .hero-content4 {
                 transform: translateY(50px) !important;
             }
