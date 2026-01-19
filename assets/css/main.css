@@ -1,3 +1,25 @@
+a.user-login-link {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  padding: 18px 32px !important;
+  color: var(--theme) !important;
+  background: #232323 !important;
+  border-radius: 8px !important;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+@media (max-width: 991px) {
+  a.user-login-link {
+    font-size: 28px !important;
+    padding: 22px 40px !important;
+  }
+}
+a.user-login-link:hover {
+  background: var(--theme);
+  color: var(--header) !important;
+}
 /*
 Website: Dr. Diego Montes Chiropractic
 Author: StynerDev
@@ -4700,7 +4722,7 @@ span {
 }
 @media (max-width: 575px) {
   .header-style4 .header-logo {
-    max-width: 120px;
+    max-width: 280px;
     display: block;
   }
   .header-style4 .header-logo img {
@@ -4940,7 +4962,7 @@ span {
 }
 @media (max-width: 575px) {
   .breadcrumb-wrapper .page-heading {
-    padding: 100px 0 60px;
+    padding: 40px 0 20px;
   }
 }
 .breadcrumb-wrapper .page-heading h6 {
@@ -9607,3 +9629,14 @@ input.main-search-input::placeholder {
   font-family: "Urbanist", sans-serif;
   margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */
+
+/* About page hero section mobile fix */
+@media (max-width: 768px) {
+  .hero-secton.hero-3 {
+    min-height: auto !important;
+    padding: 30px 0 !important;
+  }
+  .hero-secton.hero-3 .container {
+    padding-top: 20px !important;
+  }
+}
