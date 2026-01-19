@@ -9640,3 +9640,107 @@ input.main-search-input::placeholder {
     padding-top: 20px !important;
   }
 }
+
+/* Health Tips & Wellness section mobile fix */
+@media (max-width: 768px) {
+  .d-flex.align-items-center.justify-content-between {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+  .d-flex.align-items-center[style*="gap: 15px"] {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+  .d-flex.align-items-center[style*="gap: 15px"] h3 {
+    font-size: 1.5rem !important;
+  }
+  .d-flex.align-items-center[style*="gap: 15px"] span {
+    white-space: nowrap !important;
+    padding: 6px 14px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* Health Tips carousel navigation mobile fix */
+.news-prev,
+.news-next {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.news-prev:hover,
+.news-next:hover {
+  background: var(--theme);
+  color: var(--header);
+  border-color: var(--theme);
+}
+
+@media (max-width: 768px) {
+  .news-prev,
+  .news-next {
+    height: 44px !important;
+    width: 44px !important;
+    display: flex !important;
+  }
+  
+  /* Enable horizontal scrolling with touch */
+  div[style*="overflow-x: auto"] {
+    -webkit-overflow-scrolling: touch !important;
+    scroll-behavior: smooth !important;
+    scroll-snap-type: x mandatory !important;
+  }
+  
+  /* Snap to cards */
+  .news-card {
+    scroll-snap-align: center !important;
+  }
+}
+
+/* Fix Health Tips carousel to show all cards on mobile */
+@media (max-width: 768px) {
+  /* Remove centering and allow full scroll */
+  div[style*="overflow-x: auto"] .d-flex.justify-content-center {
+    justify-content: flex-start !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Ensure scroll container has proper padding */
+  div[style*="overflow-x: auto"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Add padding to first and last card for better visibility */
+  .news-card:first-child {
+    margin-left: 20px !important;
+  }
+  
+  .news-card:last-child {
+    margin-right: 20px !important;
+  }
+}
+
+/* Fix excessive space above navbar on mobile homepage */
+@media (max-width: 768px) {
+  .hero-1 {
+    padding-top: 120px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-1 {
+    padding-top: 100px !important;
+  }
+}

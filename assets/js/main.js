@@ -561,3 +561,29 @@ JavaScript TABLE OF CONTENTS
 
 })(jQuery); // End jQuery
 
+
+
+// Health Tips carousel navigation
+document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.querySelector('.news-prev');
+    const nextBtn = document.querySelector('.news-next');
+    const scrollContainer = document.querySelector('div[style*="overflow-x: auto"]');
+    
+    if (prevBtn && nextBtn && scrollContainer) {
+        const cardWidth = 320 + 24; // card width + gap
+        
+        prevBtn.addEventListener('click', function() {
+            scrollContainer.scrollBy({
+                left: -cardWidth,
+                behavior: 'smooth'
+            });
+        });
+        
+        nextBtn.addEventListener('click', function() {
+            scrollContainer.scrollBy({
+                left: cardWidth,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
