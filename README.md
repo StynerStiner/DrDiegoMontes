@@ -43,7 +43,7 @@ Professional chiropractic website for Dr. Diego Montes, D.C., providing expert s
 
 ```bash
 # Clone the repository
-git clone https://github.com/stynerdev225/DrDiegoMontes.git
+git clone https://github.com/StynerStiner/DrDiegoMontes.git
 
 # Navigate to project directory
 cd DrDiegoMontes
